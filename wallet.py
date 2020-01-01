@@ -604,3 +604,5 @@ def main():
     wallet = Wallet()
     print(f"Wallet loaded with address: {wallet.address}")
     print(f"Private key (keep secret!): {wallet.private_key}")
+
+    while True:
