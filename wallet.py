@@ -730,3 +730,6 @@ class Block:
         self.nonce = 0
         self.hash = self.compute_hash()
 
+    def compute_hash(self) -> str:
+        block_data = json.dumps({
+            'index': self.index,
