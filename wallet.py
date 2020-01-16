@@ -228,3 +228,5 @@ class Blockchain:
         genesis_block = Block(0, [], "0")
         genesis_block.mine_block(self.difficulty)
         self.chain.append(genesis_block)
+
+    def get_latest_block(self) -> Block:
