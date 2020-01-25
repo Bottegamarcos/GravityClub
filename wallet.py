@@ -68,3 +68,5 @@ class Wallet:
     def __init__(self):
         self.private_key = generate_private_key()
         self.wif = private_key_to_wif(self.private_key)
+        # Placeholder for public key (in reality, derived from private key)
+        self.public_key = hashlib.sha256(self.private_key).digest()
