@@ -8,3 +8,5 @@ import base58
 # --- Configuration ---
 NETWORK_PREFIX = b'\x00'  # Bitcoin Mainnet prefix (example)
 ADDRESS_VERSION = 0  # Address version (example)
+
+# --- Helper Functions ---
