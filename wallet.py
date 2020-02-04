@@ -283,3 +283,6 @@ class Wallet:
         return private_key, public_key
 
     def get_balance(self) -> float:
+        return self.blockchain.get_balance(self.address)
+
+    def send_transaction(self, recipient: str, amount: float) -> bool:
