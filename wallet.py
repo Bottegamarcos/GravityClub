@@ -1009,3 +1009,6 @@ class Transaction:
     def __init__(self, sender: str, recipient: str, amount: float, timestamp: float = None):
         self.sender = sender
         self.recipient = recipient
+        self.amount = amount
+        self.timestamp = timestamp or time.time()
+        self.signature = None
