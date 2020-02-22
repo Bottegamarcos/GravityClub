@@ -1210,3 +1210,6 @@ class Wallet:
         public_key = binascii.hexlify(sk.verifying_key.to_string()).decode()
         return private_key, public_key
 
+    def save_wallet(self):
+        with open(self.wallet_file, 'wb') as f:
+            pickle.dump({
