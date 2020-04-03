@@ -661,3 +661,6 @@ def main():
             else:
                 print("Wallet file not found")
 
+        elif choice == '7':
+            print("Exiting...")
+            break
