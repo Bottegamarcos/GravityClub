@@ -2,3 +2,5 @@ Okay, here's a basic cryptocurrency wallet application in Python, aiming for aro
 
 ```python
 import secrets
+import hashlib
+import base58
