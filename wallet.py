@@ -33,3 +33,8 @@ def wif_to_private_key(wif):
     extended_key = decoded_wif[:-4]
     calculated_checksum = hashlib.sha256(hashlib.sha256(extended_key).digest()).digest()[:4]
     if checksum != calculated_checksum:
+        raise ValueError("Invalid WIF checksum")
+    return extended_key[1:]  # Remove the prefix byte
+
+def hash160(data):
+    """Calculates the RIPEMD160 hash of the SHA256 hash of the data."""
