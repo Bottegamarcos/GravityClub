@@ -28,3 +28,5 @@ def wif_to_private_key(wif):
     if len(decoded_wif) != 36:
         raise ValueError("Invalid WIF format")
     if decoded_wif[0] != 0x80:
+        raise ValueError("Invalid WIF prefix")
+    checksum = decoded_wif[-4:]
