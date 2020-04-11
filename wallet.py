@@ -660,3 +660,5 @@ def main():
                 print(f"Wallet recovered with address: {wallet.address}")
             else:
                 print("Wallet file not found")
+
+        elif choice == '7':
