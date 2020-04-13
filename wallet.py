@@ -520,3 +520,5 @@ class Blockchain:
                     history.append({
                         'tx_id': tx.tx_id,
                         'sender': tx.sender,
+                        'recipient': tx.recipient,
+                        'amount': tx.amount,
