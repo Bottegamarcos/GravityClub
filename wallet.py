@@ -963,3 +963,8 @@ def main():
         choice = input("Enter choice (1-5): ")
 
         if choice == '1':
+            balance = wallet.get_balance()
+            print(f"Balance: {balance} coins")
+
+        elif choice == '2':
+            recipient = input("Enter recipient address: ")
