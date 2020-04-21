@@ -13,3 +13,8 @@ ADDRESS_VERSION = 0  # Address version (example)
 
 def generate_private_key():
     """Generates a random private key (32 bytes)."""
+    return secrets.token_bytes(32)
+
+def private_key_to_wif(private_key):
+    """Converts a private key to Wallet Import Format (WIF)."""
+    extended_key = b'\x80' + private_key
