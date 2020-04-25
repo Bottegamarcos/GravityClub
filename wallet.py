@@ -152,3 +152,5 @@ import json
 import time
 from typing import List, Dict
 import os
+
+class Transaction:
