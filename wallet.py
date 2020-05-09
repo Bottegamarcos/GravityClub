@@ -216,3 +216,5 @@ class Block:
         while self.hash[:difficulty] != target:
             self.nonce += 1
             self.hash = self.compute_hash()
+
+class Blockchain:
