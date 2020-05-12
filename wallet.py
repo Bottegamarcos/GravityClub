@@ -72,3 +72,5 @@ class Wallet:
         self.public_key = hashlib.sha256(self.private_key).digest()
         self.address = public_key_to_address(self.public_key)
 
+    def get_balance(self):
+        """Returns a placeholder balance."""
