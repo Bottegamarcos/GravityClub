@@ -55,3 +55,6 @@ def public_key_to_address(public_key):
     return address
 
 def simulate_transaction(sender_private_key, recipient_address, amount):
+    """Simulates a very basic transaction."""
+    # In a real wallet, this would involve signing the transaction with the private key,
+    # broadcasting it to the network, and waiting for confirmation.
