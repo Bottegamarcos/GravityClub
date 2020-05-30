@@ -445,3 +445,6 @@ class Blockchain:
                 'previous_hash': block.previous_hash,
                 'timestamp': block.timestamp,
                 'nonce': block.nonce,
+                'hash': block.hash
+            } for block in self.chain], f, indent=2)
+
