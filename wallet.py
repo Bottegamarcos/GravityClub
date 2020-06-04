@@ -462,3 +462,5 @@ class Blockchain:
                         tx.tx_id = tx_data['tx_id']
                     block = Block(
                         block_data['index'],
+                        transactions,
+                        block_data['previous_hash'],
