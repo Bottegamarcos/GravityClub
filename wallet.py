@@ -158,3 +158,8 @@ class Transaction:
         self.sender = sender
         self.recipient = recipient
         self.amount = amount
+        self.timestamp = timestamp or time.time()
+        self.signature = None
+
+    def to_dict(self) -> Dict:
+        return {
