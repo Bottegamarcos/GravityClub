@@ -108,3 +108,5 @@ def main():
 
     wallet.display_wallet_info()  # Show updated balance
 
+if __name__ == "__main__":
+    main()
