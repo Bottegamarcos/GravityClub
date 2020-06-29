@@ -2348,3 +2348,8 @@ class Blockchain:
                         'amount': tx.amount,
                         'timestamp': datetime.fromtimestamp(tx.timestamp).strftime('%Y-%m-%d %H:%M:%S'),
                         'block_index': block.index
+                    })
+        return history
+
+class Network:
+    def __init__(self):
