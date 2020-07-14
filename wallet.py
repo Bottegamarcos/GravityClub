@@ -4,3 +4,5 @@ Okay, here's a basic cryptocurrency wallet application in Python, aiming for aro
 import secrets
 import hashlib
 import base58
+
+# --- Configuration ---
