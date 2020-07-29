@@ -120,3 +120,5 @@ Key improvements and explanations:
 * **Address Generation:** Includes a basic address generation function (using `hash160` and `base58` encoding).  It's a simplified version of the actual Bitcoin address generation process.
 * **Transaction Simulation:** A `simulate_transaction` function provides a placeholder for transaction logic.
 * **Balance Placeholder:**  A `get_balance` function returns a fixed placeholder balance.
+* **Error Handling:** Includes basic error handling (e.g., for invalid input amounts).
+* **Comments:**  Extensive comments explain the purpose of each function and section of code.
