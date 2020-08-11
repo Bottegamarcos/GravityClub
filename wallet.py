@@ -398,3 +398,5 @@ class Transaction:
 
 class Block:
     def __init__(self, index: int, transactions: List[Transaction], previous_hash: str, timestamp: float = None):
+        self.index = index
+        self.transactions = transactions
