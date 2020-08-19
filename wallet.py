@@ -208,3 +208,6 @@ class Block:
             'previous_hash': self.previous_hash,
             'timestamp': self.timestamp,
             'nonce': self.nonce
+        }, sort_keys=True)
+        return hashlib.sha256(block_data.encode()).hexdigest()
+
