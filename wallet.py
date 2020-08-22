@@ -1893,3 +1893,8 @@ class Transaction:
             tx_hash = self.compute_hash()
             return vk.verify(binascii.unhexlify(self.signature), tx_hash.encode())
         except Exception:
+            return False
+
+class Block:
+    def __init__(self, index: int, transactions: List[Transaction], previous_hash: str, timestamp: float = None):
+        self.index = index
