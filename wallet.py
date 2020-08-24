@@ -1688,3 +1688,8 @@ class Transaction:
         tx_hash = self.compute_hash()
         self.signature = binascii.hexlify(sk.sign(tx_hash.encode())).decode()
 
+    def verify_signature(self, public_key: str) -> bool:
+        try:
+            vk = ecdsa.VerifyingKey.from_string(binascii.unhexlify(public_key), curve=ecdsa.SECP256k1)
+            tx_hash = self.compute_hash()
+            return vk.verify(binascii.unhexlify(self.signature), tx_hash.encode())
