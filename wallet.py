@@ -62,3 +62,5 @@ def simulate_transaction(sender_private_key, recipient_address, amount):
     print("Transaction successful (in simulation only!).")
     return True
 
+# --- Wallet Class ---
+
