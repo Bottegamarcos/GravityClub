@@ -92,3 +92,5 @@ class Wallet:
         print(f"Balance: {self.get_balance()}")
         print("-------------------------")
 
+# --- Main Application ---
+
