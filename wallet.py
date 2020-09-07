@@ -1264,3 +1264,6 @@ def main():
         print("5. View transaction history")
         print("6. Recover wallet")
         print("7. Exit")
+        choice = input("Enter choice (1-7): ")
+
+        if choice == '1':
