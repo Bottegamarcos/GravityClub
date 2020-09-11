@@ -106,3 +106,5 @@ def main():
     except ValueError:
         print("Invalid amount. Please enter a number.")
 
+    wallet.display_wallet_info()  # Show updated balance
+
