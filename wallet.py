@@ -308,3 +308,5 @@ def main():
         print("\nOptions:")
         print("1. Check balance")
         print("2. Send transaction")
+        print("3. Mine block")
+        print("4. Check blockchain validity")
