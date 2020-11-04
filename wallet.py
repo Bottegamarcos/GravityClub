@@ -1583,3 +1583,8 @@ class Block:
         block_data = json.dumps({
             'index': self.index,
             'transactions': [tx.to_dict() for tx in self.transactions],
+            'previous_hash': self.previous_hash,
+            'timestamp': self.timestamp,
+            'nonce': self.nonce
+        }, sort_keys=True)
+        return hashlib.sha256(block_data.encode()).hexdigest()
