@@ -2468,3 +2468,8 @@ def main():
             if history:
                 print("\nTransaction History:")
                 for tx in history:
+                    print(f"ID: {tx['tx_id'][:8]}...")
+                    print(f"  Sender: {tx['sender'][:8]}...")
+                    print(f"  Recipient: {tx['recipient'][:8]}...")
+                    print(f"  Amount: {tx['amount']} coins")
+                    print(f"  Time: {tx['timestamp']}")
