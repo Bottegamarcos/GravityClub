@@ -48,3 +48,5 @@ def public_key_to_address(public_key):
     # This is a placeholder.  We'll just hash the public key for demonstration.
     hashed_public_key = hash160(public_key)
     version_byte = ADDRESS_VERSION.to_bytes(1, 'big')
+    extended_data = version_byte + hashed_public_key
+    checksum = hashlib.sha256(hashlib.sha256(extended_data).digest()).digest()[:4]
