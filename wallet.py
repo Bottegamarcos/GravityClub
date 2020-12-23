@@ -925,3 +925,6 @@ class Wallet:
         return history
 
 def main():
+    print("Crypto Wallet Application")
+    wallet = Wallet()
+    print(f"Wallet loaded with address: {wallet.address}")
