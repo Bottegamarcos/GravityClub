@@ -340,3 +340,5 @@ def main():
             print("Exiting...")
             break
 
+        else:
+            print("Invalid choice")
