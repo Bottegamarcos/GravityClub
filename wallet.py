@@ -976,3 +976,6 @@ def main():
                     print(f"  Time: {tx['timestamp']}")
                     print(f"  Block: {tx['block_index']}\n")
             else:
+                print("No transactions found")
+
+        elif choice == '6':
