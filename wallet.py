@@ -576,3 +576,5 @@ class Wallet:
             self.address = data['address']
             self.blockchain = Blockchain()
 
+    def get_balance(self) -> float:
+        return self.blockchain.get_balance(self.address)
