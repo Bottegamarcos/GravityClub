@@ -595,3 +595,6 @@ class Wallet:
         print(f"Block #{block.index} mined with hash: {block.hash}")
         return block
 
+    def get_transaction_history(self):
+        history = self.blockchain.get_transaction_history(self.address)
+        return history
