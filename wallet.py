@@ -463,3 +463,6 @@ class Blockchain:
                     block = Block(
                         block_data['index'],
                         transactions,
+                        block_data['previous_hash'],
+                        block_data['timestamp']
+                    )
