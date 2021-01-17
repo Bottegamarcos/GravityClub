@@ -218,3 +218,5 @@ class Block:
             self.hash = self.compute_hash()
 
 class Blockchain:
+    def __init__(self, difficulty: int = 4):
+        self.chain: List[Block] = []
