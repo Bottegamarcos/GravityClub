@@ -273,3 +273,8 @@ class Blockchain:
 class Wallet:
     def __init__(self):
         self.private_key, self.public_key = self.generate_keys()
+        self.address = self.public_key  # Simplified: using public key as address
+        self.blockchain = Blockchain()
+
+    def generate_keys(self):
+        sk = ecdsa.SigningKey.generate(curve=ecdsa.SECP256k1)
