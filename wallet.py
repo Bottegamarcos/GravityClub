@@ -586,3 +586,5 @@ class Wallet:
         tx = Transaction(self.address, recipient, amount)
         tx.sign_transaction(self.private_key)
         if self.network.broadcast_transaction(tx):
+            print("Transaction broadcasted to network")
+            return True
