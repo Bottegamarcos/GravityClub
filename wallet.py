@@ -2218,3 +2218,8 @@ class Wallet:
     def mine(self):
         block = self.blockchain.mine_pending_transactions(self.address)
         print(f"Block #{block.index} mined with hash: {block.hash}")
+        return block
+
+    def get_transaction_history(self):
+        history = self.blockchain.get_transaction_history(self.address)
+        return history
