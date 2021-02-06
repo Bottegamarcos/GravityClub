@@ -244,3 +244,6 @@ class Blockchain:
         self.chain.append(block)
         self.pending_transactions = [Transaction("network", miner_address, 10.0)]
         return block
+
+    def get_balance(self, address: str) -> float:
+        balance = 0.0
