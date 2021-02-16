@@ -1343,3 +1343,8 @@ class Transaction:
         return {
             'tx_id': self.tx_id,
             'sender': self.sender,
+            'recipient': self.recipient,
+            'amount': self.amount,
+            'timestamp': self.timestamp,
+            'signature': self.signature
+        }
