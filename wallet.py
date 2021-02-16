@@ -100,3 +100,5 @@ def main():
     wallet.display_wallet_info()
 
     recipient_address = input("Enter recipient address: ")
+    try:
+        amount = float(input("Enter amount to send: "))
