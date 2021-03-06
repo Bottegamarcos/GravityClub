@@ -91,3 +91,6 @@ class Wallet:
         print(f"Address: {self.address}")
         print(f"Balance: {self.get_balance()}")
         print("-------------------------")
+
+# --- Main Application ---
+
