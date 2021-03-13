@@ -600,3 +600,5 @@ class Wallet:
         return history
 
 def main():
+    print("Crypto Wallet Application")
+    wallet = Wallet()
