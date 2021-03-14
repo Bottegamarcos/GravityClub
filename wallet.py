@@ -532,3 +532,5 @@ class Network:
         self.nodes = []
 
     def add_node(self, wallet: 'Wallet'):
+        self.nodes.append(wallet)
+
