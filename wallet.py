@@ -793,3 +793,8 @@ class Blockchain:
                     )
                     block.nonce = block_data['nonce']
                     block.hash = block_data['hash']
+                    self.chain.append(block)
+
+    def get_latest_block(self) -> Block:
+        return self.chain[-1]
+
