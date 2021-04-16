@@ -86,3 +86,5 @@ class Wallet:
 
     def display_wallet_info(self):
         """Displays wallet information."""
+        print("--- Wallet Information ---")
+        print(f"Private Key (WIF): {self.wif}")
