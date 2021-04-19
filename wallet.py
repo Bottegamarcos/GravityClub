@@ -895,3 +895,6 @@ class Wallet:
 
     def load_wallet(self):
         with open(self.wallet_file, 'rb') as f:
+            data = pickle.load(f)
+            self.private_key = data['private_key']
+            self.public_key = data['public_key']
