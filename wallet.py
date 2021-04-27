@@ -544,3 +544,6 @@ class Network:
 class Wallet:
     def __init__(self, wallet_file: str = "wallet.pkl"):
         self.wallet_file = wallet_file
+        self.network = Network()
+        self.network.add_node(self)
+        if os.path.exists(wallet_file):
