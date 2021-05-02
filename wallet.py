@@ -136,3 +136,6 @@ Key improvements and explanations:
 3.  **Run from the command line:** `python wallet.py`
 
 **Important Security Considerations (Again!):**
+
+*   **This code is not secure.** Do not use it for real cryptocurrencies.
+*   **Private Key Storage:**  Never store private keys in plain text in your code or on your computer.  Use secure key management practices.
