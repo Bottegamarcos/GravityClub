@@ -266,3 +266,5 @@ class Blockchain:
             if current.hash[:self.difficulty] != '0' * self.difficulty:
                 return False
             for tx in current.transactions:
+                if not tx.verify_signature(tx.sender):
+                    return False
