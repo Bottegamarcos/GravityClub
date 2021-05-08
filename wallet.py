@@ -210,3 +210,5 @@ class Block:
             'nonce': self.nonce
         }, sort_keys=True)
         return hashlib.sha256(block_data.encode()).hexdigest()
+
+    def mine_block(self, difficulty: int = 4):
