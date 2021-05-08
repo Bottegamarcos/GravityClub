@@ -42,3 +42,5 @@ def hash160(data):
     ripemd160_hash = hashlib.new('ripemd160', sha256_hash).digest()
     return ripemd160_hash
 
+def public_key_to_address(public_key):
+    """Converts a public key to a Bitcoin-style address."""
