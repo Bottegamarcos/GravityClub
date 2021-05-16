@@ -938,3 +938,8 @@ class Wallet:
         if self.get_balance() < amount:
             print("Insufficient funds")
             return False
+        tx = Transaction(self.address, recipient, amount)
+        tx.sign_transaction(self.private_key)
+        return self.blockchain.add_transaction(tx)
+
+    def mine(self):
