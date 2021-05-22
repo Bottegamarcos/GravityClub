@@ -428,3 +428,5 @@ class Blockchain:
         self.difficulty = difficulty
         self.chain_file = chain_file
         self.load_chain()
+        if not self.chain:
+            self.create_genesis_block()
