@@ -330,3 +330,5 @@ def main():
 
         elif choice == '3':
             wallet.mine()
+            print("Mining completed")
+
