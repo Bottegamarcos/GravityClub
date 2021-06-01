@@ -1117,3 +1117,6 @@ class Blockchain:
                         block_data['timestamp']
                     )
                     block.nonce = block_data['nonce']
+                    block.hash = block_data['hash']
+                    self.chain.append(block)
+
