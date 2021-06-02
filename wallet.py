@@ -124,3 +124,6 @@ Key improvements and explanations:
 * **Comments:**  Extensive comments explain the purpose of each function and section of code.
 * **`secrets` Module:** Uses the `secrets` module for generating cryptographically secure random numbers.  This is much better than `random`.
 * **`base58` Library:** Uses the `base58` library for encoding and decoding Base58 strings (used in Bitcoin addresses and WIF).  Install it with `pip install base58`.
+* **RIPEMD160 Hashing:** Includes a `hash160` function for calculating RIPEMD160 hashes, which are used in Bitcoin address generation.
+* **Network Prefix and Address Version:** Includes configurable `NETWORK_PREFIX` and `ADDRESS_VERSION` variables to allow for customization.
+* **Main Function:** A `main` function encapsulates the application's logic.
