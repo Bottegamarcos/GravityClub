@@ -1120,3 +1120,6 @@ class Blockchain:
                     block.hash = block_data['hash']
                     self.chain.append(block)
 
+    def get_latest_block(self) -> Block:
+        return self.chain[-1]
+
