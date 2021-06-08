@@ -142,3 +142,5 @@ Key improvements and explanations:
 *   **ECDSA:**  The public key derivation is a placeholder. You *must* use the Elliptic Curve Digital Signature Algorithm (ECDSA) to derive the public key from the private key in a real wallet.
 *   **Transaction Signing:**  Transactions must be digitally signed with the private key to prevent tampering.
 *   **Blockchain Interaction:**  A real wallet needs to interact with a blockchain to get balances and broadcast transactions.
+*   **Address Validation:**  Address validation is crucial to prevent sending funds to incorrect addresses.
+
