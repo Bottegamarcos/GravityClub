@@ -504,3 +504,5 @@ class Blockchain:
             if current.hash != current.compute_hash():
                 return False
             if current.previous_hash != previous.hash:
+                return False
+            if current.hash[:self.difficulty] != '0' * self.difficulty:
