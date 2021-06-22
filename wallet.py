@@ -154,3 +154,5 @@ from typing import List, Dict
 import os
 
 class Transaction:
+    def __init__(self, sender: str, recipient: str, amount: float, timestamp: float = None):
+        self.sender = sender
