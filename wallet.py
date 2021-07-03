@@ -300,3 +300,5 @@ class Wallet:
 
 def main():
     print("Crypto Wallet Application")
+    wallet = Wallet()
+    print(f"Wallet created with address: {wallet.address}")
