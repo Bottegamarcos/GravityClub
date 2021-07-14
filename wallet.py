@@ -952,3 +952,6 @@ def main():
                 if wallet.send_transaction(recipient, amount):
                     print("Transaction sent successfully")
                 else:
+                    print("Transaction failed")
+            except ValueError:
+                print("Invalid amount")
