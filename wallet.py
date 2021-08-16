@@ -918,3 +918,8 @@ class Blockchain:
                 if not tx.verify_signature(tx.sender):
                     return False
         return True
+
+class Wallet:
+    def __init__(self):
+        self.private_key, self.public_key = self.generate_keys()
+        self.address = self.public_key  # Simplified: using public key as address
