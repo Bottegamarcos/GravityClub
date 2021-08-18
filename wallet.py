@@ -589,3 +589,6 @@ class Wallet:
             print("Transaction broadcasted to network")
             return True
         return False
+
+    def mine(self):
+        block = self.blockchain.mine_pending_transactions(self.address)
