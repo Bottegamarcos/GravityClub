@@ -727,3 +727,6 @@ class Block:
         self.transactions = transactions
         self.previous_hash = previous_hash
         self.timestamp = timestamp or time.time()
+        self.nonce = 0
+        self.hash = self.compute_hash()
+
