@@ -538,3 +538,6 @@ class Network:
         success = True
         for node in self.nodes:
             if not node.blockchain.add_transaction(transaction):
+                success = False
+        return success
+
