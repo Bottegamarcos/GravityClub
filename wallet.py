@@ -1207,3 +1207,6 @@ class Wallet:
     def generate_keys(self):
         sk = ecdsa.SigningKey.generate(curve=ecdsa.SECP256k1)
         private_key = binascii.hexlify(sk.to_string()).decode()
+        public_key = binascii.hexlify(sk.verifying_key.to_string()).decode()
+        return private_key, public_key
+
