@@ -168,3 +168,5 @@ class Transaction:
             'amount': self.amount,
             'timestamp': self.timestamp,
             'signature': self.signature
+        }
+
