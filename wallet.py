@@ -564,3 +564,5 @@ class Wallet:
         with open(self.wallet_file, 'wb') as f:
             pickle.dump({
                 'private_key': self.private_key,
+                'public_key': self.public_key,
+                'address': self.address
