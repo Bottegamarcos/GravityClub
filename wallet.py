@@ -293,3 +293,8 @@ class Wallet:
         tx.sign_transaction(self.private_key)
         return self.blockchain.add_transaction(tx)
 
+    def mine(self):
+        block = self.blockchain.mine_pending_transactions(self.address)
+        print(f"Block #{block.index} mined with hash: {block.hash}")
+        return block
+
