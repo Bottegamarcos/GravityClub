@@ -421,3 +421,6 @@ class Block:
             self.nonce += 1
             self.hash = self.compute_hash()
 
+class Blockchain:
+    def __init__(self, difficulty: int = 4, chain_file: str = "blockchain.json"):
+        self.chain: List[Block] = []
