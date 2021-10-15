@@ -94,3 +94,5 @@ class Wallet:
 
 # --- Main Application ---
 
+def main():
+    """Main function to run the wallet application."""
