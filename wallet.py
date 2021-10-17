@@ -37,3 +37,6 @@ def wif_to_private_key(wif):
     return extended_key[1:]  # Remove the prefix byte
 
 def hash160(data):
+    """Calculates the RIPEMD160 hash of the SHA256 hash of the data."""
+    sha256_hash = hashlib.sha256(data).digest()
+    ripemd160_hash = hashlib.new('ripemd160', sha256_hash).digest()
