@@ -97,3 +97,6 @@ class Wallet:
 def main():
     """Main function to run the wallet application."""
     wallet = Wallet()
+    wallet.display_wallet_info()
+
+    recipient_address = input("Enter recipient address: ")
