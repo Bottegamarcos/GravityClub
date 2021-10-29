@@ -90,3 +90,5 @@ class Wallet:
         print(f"Private Key (WIF): {self.wif}")
         print(f"Address: {self.address}")
         print(f"Balance: {self.get_balance()}")
+        print("-------------------------")
+
