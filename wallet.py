@@ -898,3 +898,8 @@ class Blockchain:
         balance = 0.0
         for block in self.chain:
             for tx in block.transactions:
+                if tx.sender == address:
+                    balance -= tx.amount
+                if tx.recipient == address:
+                    balance += tx.amount
+        return balance
