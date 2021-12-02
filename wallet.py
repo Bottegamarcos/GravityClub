@@ -658,3 +658,6 @@ def main():
             if os.path.exists(wallet_file):
                 wallet = Wallet(wallet_file)
                 print(f"Wallet recovered with address: {wallet.address}")
+            else:
+                print("Wallet file not found")
+
