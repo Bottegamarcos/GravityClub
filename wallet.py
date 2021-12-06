@@ -883,3 +883,8 @@ class Blockchain:
 
     def add_transaction(self, transaction: Transaction):
         if transaction.verify_signature(transaction.sender):
+            self.pending_transactions.append(transaction)
+            return True
+        return False
+
+    def mine_pending_transactions(self, miner_address: str):
