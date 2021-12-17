@@ -313,3 +313,6 @@ def main():
         print("5. Exit")
         choice = input("Enter choice (1-5): ")
 
+        if choice == '1':
+            balance = wallet.get_balance()
+            print(f"Balance: {balance} coins")
