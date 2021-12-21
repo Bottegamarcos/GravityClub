@@ -102,3 +102,5 @@ def main():
     recipient_address = input("Enter recipient address: ")
     try:
         amount = float(input("Enter amount to send: "))
+        wallet.send_transaction(recipient_address, amount)
+    except ValueError:
