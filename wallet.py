@@ -82,3 +82,6 @@ class Wallet:
         if amount > self.get_balance():
             print("Insufficient funds.")
             return False
+        return simulate_transaction(self.private_key, recipient_address, amount)
+
+    def display_wallet_info(self):
