@@ -112,3 +112,6 @@ if __name__ == "__main__":
     main()
 ```
 
+Key improvements and explanations:
+
+* **Security Disclaimer:**  The code includes a very prominent disclaimer that it's not for real-world use.  This is crucial.
