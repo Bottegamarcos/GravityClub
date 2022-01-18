@@ -474,3 +474,5 @@ class Blockchain:
         return self.chain[-1]
 
     def add_transaction(self, transaction: Transaction):
+        if transaction.verify_signature(transaction.sender):
+            self.pending_transactions.append(transaction)
