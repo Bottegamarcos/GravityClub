@@ -132,3 +132,5 @@ Key improvements and explanations:
 **To run this code:**
 
 1.  **Install `base58`:** `pip install base58`
+2.  **Save the code:** Save the code as a `.py` file (e.g., `wallet.py`).
+3.  **Run from the command line:** `python wallet.py`
