@@ -1753,3 +1753,8 @@ class Wallet:
     def get_balance(self) -> float:
         return self.blockchain.get_balance(self.address)
 
+    def send_transaction(self, recipient: str, amount: float) -> bool:
+        if self.get_balance() < amount:
+            print("Insufficient funds")
+            return False
+        tx = Transaction(self.address, recipient, amount)
