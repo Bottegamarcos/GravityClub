@@ -1513,3 +1513,8 @@ def main():
         elif choice == '7':
             print("Exiting...")
             break
+
+        else:
+            print("Invalid choice")
+
+if __name__ == "__main__":
