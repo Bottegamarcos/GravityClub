@@ -328,3 +328,5 @@ def main():
             except ValueError:
                 print("Invalid amount")
 
+        elif choice == '3':
+            wallet.mine()
