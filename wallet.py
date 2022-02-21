@@ -913,3 +913,6 @@ class Wallet:
         if self.network.broadcast_transaction(tx):
             print("Transaction broadcasted to network")
             return True
+        return False
+
+    def mine(self):
