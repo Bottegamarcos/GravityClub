@@ -592,3 +592,6 @@ class Wallet:
 
     def mine(self):
         block = self.blockchain.mine_pending_transactions(self.address)
+        print(f"Block #{block.index} mined with hash: {block.hash}")
+        return block
+
