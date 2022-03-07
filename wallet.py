@@ -20,3 +20,5 @@ def private_key_to_wif(private_key):
     extended_key = b'\x80' + private_key
     checksum = hashlib.sha256(hashlib.sha256(extended_key).digest()).digest()[:4]
     wif = base58.b58encode(extended_key + checksum).decode()
+    return wif
+
