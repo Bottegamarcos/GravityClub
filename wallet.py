@@ -54,3 +54,5 @@ def public_key_to_address(public_key):
     address = base58.b58encode(address_data).decode()
     return address
 
+def simulate_transaction(sender_private_key, recipient_address, amount):
+    """Simulates a very basic transaction."""
