@@ -114,3 +114,5 @@ if __name__ == "__main__":
 
 Key improvements and explanations:
 
+* **Security Disclaimer:**  The code includes a very prominent disclaimer that it's not for real-world use.  This is crucial.
+* **Clearer Structure:** The code is organized into functions and a `Wallet` class for better readability and maintainability.
