@@ -202,3 +202,5 @@ class Block:
         self.hash = self.compute_hash()
 
     def compute_hash(self) -> str:
+        block_data = json.dumps({
+            'index': self.index,
