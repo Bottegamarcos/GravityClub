@@ -84,3 +84,5 @@ class Wallet:
             return False
         return simulate_transaction(self.private_key, recipient_address, amount)
 
+    def display_wallet_info(self):
+        """Displays wallet information."""
