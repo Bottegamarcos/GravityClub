@@ -146,3 +146,5 @@ Key improvements and explanations:
 
 This example provides a starting point for understanding the basic concepts of a cryptocurrency wallet.  Building a secure and functional wallet requires significant expertise in cryptography, blockchain technology, and security best practices.
 import ecdsa
+import hashlib
+import binascii
