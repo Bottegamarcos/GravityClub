@@ -628,3 +628,5 @@ def main():
                     print("Transaction sent successfully")
                 else:
                     print("Transaction failed")
+            except ValueError:
+                print("Invalid amount")
