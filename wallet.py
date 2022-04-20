@@ -2198,3 +2198,8 @@ class Transaction:
             'signature': self.signature
         }
 
+    def compute_hash(self) -> str:
+        tx_data = json.dumps({
+            'sender': self.sender,
+            'recipient': self.recipient,
+            'amount': self.amount,
