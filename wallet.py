@@ -64,3 +64,5 @@ def simulate_transaction(sender_private_key, recipient_address, amount):
 
 # --- Wallet Class ---
 
+class Wallet:
+    def __init__(self):
