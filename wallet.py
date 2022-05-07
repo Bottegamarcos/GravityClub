@@ -3,3 +3,8 @@ Okay, here's a basic cryptocurrency wallet application in Python, aiming for aro
 ```python
 import secrets
 import hashlib
+import base58
+
+# --- Configuration ---
+NETWORK_PREFIX = b'\x00'  # Bitcoin Mainnet prefix (example)
+ADDRESS_VERSION = 0  # Address version (example)
