@@ -30,3 +30,5 @@ def wif_to_private_key(wif):
     if decoded_wif[0] != 0x80:
         raise ValueError("Invalid WIF prefix")
     checksum = decoded_wif[-4:]
+    extended_key = decoded_wif[:-4]
+    calculated_checksum = hashlib.sha256(hashlib.sha256(extended_key).digest()).digest()[:4]
