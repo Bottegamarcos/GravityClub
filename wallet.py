@@ -2153,3 +2153,8 @@ def main():
                 print("No transactions found")
 
         elif choice == '6':
+            wallet_file = input("Enter wallet file path (default: wallet.pkl): ") or "wallet.pkl"
+            if os.path.exists(wallet_file):
+                wallet = Wallet(wallet_file)
+                print(f"Wallet recovered with address: {wallet.address}")
+            else:
