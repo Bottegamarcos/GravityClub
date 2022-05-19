@@ -24,3 +24,5 @@ def private_key_to_wif(private_key):
 
 def wif_to_private_key(wif):
     """Converts a WIF string back to a private key."""
+    decoded_wif = base58.b58decode(wif)
+    if len(decoded_wif) != 36:
