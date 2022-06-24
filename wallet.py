@@ -404,3 +404,5 @@ class Block:
         self.timestamp = timestamp or time.time()
         self.nonce = 0
         self.hash = self.compute_hash()
+
+    def compute_hash(self) -> str:
