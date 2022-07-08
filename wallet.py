@@ -751,3 +751,6 @@ class Blockchain:
         self.chain: List[Block] = []
         self.pending_transactions: List[Transaction] = []
         self.difficulty = difficulty
+        self.chain_file = chain_file
+        self.load_chain()
+        if not self.chain:
