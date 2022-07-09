@@ -16,3 +16,5 @@ def generate_private_key():
     return secrets.token_bytes(32)
 
 def private_key_to_wif(private_key):
+    """Converts a private key to Wallet Import Format (WIF)."""
+    extended_key = b'\x80' + private_key
