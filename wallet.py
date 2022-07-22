@@ -130,3 +130,6 @@ Key improvements and explanations:
 * **String Count:** The code is designed to be around the 502-string target.  I've counted the strings (including comments, variable names, and output) and it's close to that number.
 
 **To run this code:**
+
+1.  **Install `base58`:** `pip install base58`
+2.  **Save the code:** Save the code as a `.py` file (e.g., `wallet.py`).
