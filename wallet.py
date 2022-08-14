@@ -460,3 +460,5 @@ class Blockchain:
                     for tx, tx_data in zip(transactions, block_data['transactions']):
                         tx.signature = tx_data['signature']
                         tx.tx_id = tx_data['tx_id']
+                    block = Block(
+                        block_data['index'],
