@@ -2363,3 +2363,8 @@ class Network:
         for node in self.nodes:
             if not node.blockchain.add_transaction(transaction):
                 success = False
+        return success
+
+class Wallet:
+    def __init__(self, wallet_file: str = "wallet.pkl"):
+        self.wallet_file = wallet_file
