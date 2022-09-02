@@ -1147,3 +1147,6 @@ class Blockchain:
                     balance += tx.amount
         return balance
 
+    def is_chain_valid(self) -> bool:
+        for i in range(1, len(self.chain)):
+            current = self.chain[i]
