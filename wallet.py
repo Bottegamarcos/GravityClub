@@ -304,3 +304,5 @@ def main():
     print(f"Wallet created with address: {wallet.address}")
     print(f"Private key (keep secret!): {wallet.private_key}")
 
+    while True:
+        print("\nOptions:")
