@@ -502,3 +502,6 @@ class Blockchain:
             current = self.chain[i]
             previous = self.chain[i-1]
             if current.hash != current.compute_hash():
+                return False
+            if current.previous_hash != previous.hash:
+                return False
