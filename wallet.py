@@ -178,3 +178,5 @@ class Transaction:
             'timestamp': self.timestamp
         }, sort_keys=True)
         return hashlib.sha256(tx_data.encode()).hexdigest()
+
+    def sign_transaction(self, private_key: str):
