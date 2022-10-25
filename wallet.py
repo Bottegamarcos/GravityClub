@@ -78,3 +78,5 @@ class Wallet:
         return 100  # Placeholder balance
 
     def send_transaction(self, recipient_address, amount):
+        """Sends a simulated transaction."""
+        if amount > self.get_balance():
