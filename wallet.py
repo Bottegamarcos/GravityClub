@@ -93,3 +93,8 @@ class Wallet:
         print("-------------------------")
 
 # --- Main Application ---
+
+def main():
+    """Main function to run the wallet application."""
+    wallet = Wallet()
+    wallet.display_wallet_info()
