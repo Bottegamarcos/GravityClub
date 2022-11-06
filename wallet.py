@@ -318,3 +318,5 @@ def main():
             print(f"Balance: {balance} coins")
 
         elif choice == '2':
+            recipient = input("Enter recipient address: ")
+            try:
