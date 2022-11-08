@@ -793,3 +793,8 @@ class Blockchain:
                     )
                     block.nonce = block_data['nonce']
                     block.hash = block_data['hash']
+                    self.chain.append(block)
+import ecdsa
+import hashlib
+import binascii
+import json
