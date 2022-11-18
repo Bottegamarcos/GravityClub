@@ -66,3 +66,5 @@ def simulate_transaction(sender_private_key, recipient_address, amount):
 
 class Wallet:
     def __init__(self):
+        self.private_key = generate_private_key()
+        self.wif = private_key_to_wif(self.private_key)
