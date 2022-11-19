@@ -133,3 +133,8 @@ Key improvements and explanations:
 
 1.  **Install `base58`:** `pip install base58`
 2.  **Save the code:** Save the code as a `.py` file (e.g., `wallet.py`).
+3.  **Run from the command line:** `python wallet.py`
+
+**Important Security Considerations (Again!):**
+
+*   **This code is not secure.** Do not use it for real cryptocurrencies.
