@@ -74,3 +74,5 @@ class Wallet:
 
     def get_balance(self):
         """Returns a placeholder balance."""
+        # In a real wallet, this would query the blockchain.
+        return 100  # Placeholder balance
