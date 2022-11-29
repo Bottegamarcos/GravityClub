@@ -514,3 +514,6 @@ class Blockchain:
 
     def get_transaction_history(self, address: str) -> List[Dict]:
         history = []
+        for block in self.chain:
+            for tx in block.transactions:
+                if tx.sender == address or tx.recipient == address:
