@@ -416,3 +416,5 @@ class Block:
         return hashlib.sha256(block_data.encode()).hexdigest()
 
     def mine_block(self, difficulty: int = 4):
+        target = '0' * difficulty
+        while self.hash[:difficulty] != target:
