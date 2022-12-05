@@ -1328,3 +1328,8 @@ import time
 from typing import List, Dict
 import os
 import pickle
+from datetime import datetime
+
+class Transaction:
+    def __init__(self, sender: str, recipient: str, amount: float, timestamp: float = None):
+        self.sender = sender
