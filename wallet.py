@@ -1008,3 +1008,8 @@ if __name__ == "__main__":
         block.mine_block(self.difficulty)
         self.chain.append(block)
         self.pending_transactions = [Transaction("network", miner_address, 10.0)]
+        self.save_chain()
+        return block
+
+    def get_balance(self, address: str) -> float:
+        balance = 0.0
