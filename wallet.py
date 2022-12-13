@@ -1878,3 +1878,8 @@ class Transaction:
             'sender': self.sender,
             'recipient': self.recipient,
             'amount': self.amount,
+            'timestamp': self.timestamp
+        }, sort_keys=True)
+        return hashlib.sha256(tx_data.encode()).hexdigest()
+
+    def sign_transaction(self, private_key: str):
