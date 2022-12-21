@@ -843,3 +843,8 @@ class Blockchain:
             for tx in block.transactions:
                 if tx.sender == address or tx.recipient == address:
                     history.append({
+                        'tx_id': tx.tx_id,
+                        'sender': tx.sender,
+                        'recipient': tx.recipient,
+                        'amount': tx.amount,
+                        'timestamp': datetime.fromtimestamp(tx.timestamp).strftime('%Y-%m-%d %H:%M:%S'),
