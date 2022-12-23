@@ -1478,3 +1478,8 @@ def main():
                 else:
                     print("Transaction failed")
             except ValueError:
+                print("Invalid amount")
+
+        elif choice == '3':
+            wallet.mine()
+            print("Mining completed")
