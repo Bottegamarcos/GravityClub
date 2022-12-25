@@ -574,3 +574,6 @@ class Wallet:
             self.private_key = data['private_key']
             self.public_key = data['public_key']
             self.address = data['address']
+            self.blockchain = Blockchain()
+
+    def get_balance(self) -> float:
