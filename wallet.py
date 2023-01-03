@@ -2188,3 +2188,8 @@ class Transaction:
         self.signature = None
         self.tx_id = self.compute_hash()
 
+    def to_dict(self) -> Dict:
+        return {
+            'tx_id': self.tx_id,
+            'sender': self.sender,
+            'recipient': self.recipient,
