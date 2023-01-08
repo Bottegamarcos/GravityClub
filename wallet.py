@@ -1283,3 +1283,8 @@ class Blockchain:
     def create_genesis_block(self):
         genesis_block = Block(0, [], "0")
         genesis_block.mine_block(self.difficulty)
+        self.chain.append(genesis_block)
+        self.save_chain()
+
+    def save_chain(self):
+        with open(self.chain_file, 'w') as f:
