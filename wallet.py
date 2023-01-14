@@ -1613,3 +1613,8 @@ def main():
         elif choice == '4':
             is_valid = wallet.blockchain.is_chain_valid()
             print(f"Blockchain valid: {is_valid}")
+
+        elif choice == '5':
+            history = wallet.get_transaction_history()
+            if history:
+                print("\nTransaction History:")
