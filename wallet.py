@@ -322,3 +322,6 @@ def main():
             try:
                 amount = float(input("Enter amount: "))
                 if wallet.send_transaction(recipient, amount):
+                    print("Transaction sent successfully")
+                else:
+                    print("Transaction failed")
