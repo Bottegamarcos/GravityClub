@@ -70,3 +70,6 @@ class Wallet:
         self.wif = private_key_to_wif(self.private_key)
         # Placeholder for public key (in reality, derived from private key)
         self.public_key = hashlib.sha256(self.private_key).digest()
+        self.address = public_key_to_address(self.public_key)
+
+    def get_balance(self):
