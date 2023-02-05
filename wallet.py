@@ -1498,3 +1498,8 @@ def main():
                     print(f"  Recipient: {tx['recipient'][:8]}...")
                     print(f"  Amount: {tx['amount']} coins")
                     print(f"  Time: {tx['timestamp']}")
+                    print(f"  Block: {tx['block_index']}\n")
+            else:
+                print("No transactions found")
+
+        elif choice == '6':
