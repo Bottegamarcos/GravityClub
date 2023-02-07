@@ -590,3 +590,5 @@ class Wallet:
             return True
         return False
 
+    def mine(self):
+        block = self.blockchain.mine_pending_transactions(self.address)
