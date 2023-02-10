@@ -337,3 +337,6 @@ def main():
             print(f"Blockchain valid: {is_valid}")
 
         elif choice == '5':
+            print("Exiting...")
+            break
+
