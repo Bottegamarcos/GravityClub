@@ -540,3 +540,5 @@ class Network:
             if not node.blockchain.add_transaction(transaction):
                 success = False
         return success
+
+class Wallet:
