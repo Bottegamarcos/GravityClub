@@ -306,3 +306,5 @@ def main():
 
     while True:
         print("\nOptions:")
+        print("1. Check balance")
+        print("2. Send transaction")
