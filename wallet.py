@@ -390,3 +390,5 @@ class Transaction:
 
     def verify_signature(self, public_key: str) -> bool:
         try:
+            vk = ecdsa.VerifyingKey.from_string(binascii.unhexlify(public_key), curve=ecdsa.SECP256k1)
+            tx_hash = self.compute_hash()
