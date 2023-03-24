@@ -1138,3 +1138,8 @@ class Blockchain:
         return block
 
     def get_balance(self, address: str) -> float:
+        balance = 0.0
+        for block in self.chain:
+            for tx in block.transactions:
+                if tx.sender == address:
+                    balance -= tx.amount
