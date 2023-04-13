@@ -224,3 +224,5 @@ class Blockchain:
         self.difficulty = difficulty
         self.create_genesis_block()
 
+    def create_genesis_block(self):
+        genesis_block = Block(0, [], "0")
