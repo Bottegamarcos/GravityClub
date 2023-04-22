@@ -634,3 +634,6 @@ def main():
         elif choice == '3':
             wallet.mine()
             print("Mining completed")
+
+        elif choice == '4':
+            is_valid = wallet.blockchain.is_chain_valid()
