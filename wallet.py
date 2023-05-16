@@ -73,3 +73,6 @@ class Wallet:
         self.address = public_key_to_address(self.public_key)
 
     def get_balance(self):
+        """Returns a placeholder balance."""
+        # In a real wallet, this would query the blockchain.
+        return 100  # Placeholder balance
