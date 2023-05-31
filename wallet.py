@@ -546,3 +546,5 @@ class Wallet:
         self.wallet_file = wallet_file
         self.network = Network()
         self.network.add_node(self)
+        if os.path.exists(wallet_file):
+            self.load_wallet()
