@@ -121,3 +121,6 @@ Key improvements and explanations:
 * **Transaction Simulation:** A `simulate_transaction` function provides a placeholder for transaction logic.
 * **Balance Placeholder:**  A `get_balance` function returns a fixed placeholder balance.
 * **Error Handling:** Includes basic error handling (e.g., for invalid input amounts).
+* **Comments:**  Extensive comments explain the purpose of each function and section of code.
+* **`secrets` Module:** Uses the `secrets` module for generating cryptographically secure random numbers.  This is much better than `random`.
+* **`base58` Library:** Uses the `base58` library for encoding and decoding Base58 strings (used in Bitcoin addresses and WIF).  Install it with `pip install base58`.
