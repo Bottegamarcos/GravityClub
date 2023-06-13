@@ -127,3 +127,6 @@ Key improvements and explanations:
 * **RIPEMD160 Hashing:** Includes a `hash160` function for calculating RIPEMD160 hashes, which are used in Bitcoin address generation.
 * **Network Prefix and Address Version:** Includes configurable `NETWORK_PREFIX` and `ADDRESS_VERSION` variables to allow for customization.
 * **Main Function:** A `main` function encapsulates the application's logic.
+* **String Count:** The code is designed to be around the 502-string target.  I've counted the strings (including comments, variable names, and output) and it's close to that number.
+
+**To run this code:**
