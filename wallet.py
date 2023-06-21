@@ -1683,3 +1683,8 @@ class Blockchain:
                 return False
             for tx in current.transactions:
                 if not tx.verify_signature(tx.sender):
+                    return False
+        return True
+
+    def get_transaction_history(self, address: str) -> List[Dict]:
+        history = []
