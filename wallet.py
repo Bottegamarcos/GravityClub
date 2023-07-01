@@ -338,3 +338,8 @@ def main():
 
         elif choice == '5':
             print("Exiting...")
+            break
+
+        else:
+            print("Invalid choice")
+
