@@ -1267,3 +1267,6 @@ def main():
         choice = input("Enter choice (1-7): ")
 
         if choice == '1':
+            balance = wallet.get_balance()
+            print(f"Balance: {balance} coins")
+
