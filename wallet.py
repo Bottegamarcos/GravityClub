@@ -937,3 +937,6 @@ def main():
         print("3. Mine block")
         print("4. Check blockchain validity")
         print("5. View transaction history")
+        print("6. Recover wallet")
+        print("7. Exit")
+        choice = input("Enter choice (1-7): ")
