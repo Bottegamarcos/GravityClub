@@ -298,3 +298,5 @@ class Wallet:
         print(f"Block #{block.index} mined with hash: {block.hash}")
         return block
 
+def main():
+    print("Crypto Wallet Application")
