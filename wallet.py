@@ -2423,3 +2423,8 @@ class Wallet:
         history = self.blockchain.get_transaction_history(self.address)
         return history
 
+def main():
+    print("Crypto Wallet Application")
+    wallet = Wallet()
+    print(f"Wallet loaded with address: {wallet.address}")
+    print(f"Private key (keep secret!): {wallet.private_key}")
