@@ -898,3 +898,6 @@ class Wallet:
             data = pickle.load(f)
             self.private_key = data['private_key']
             self.public_key = data['public_key']
+            self.address = data['address']
+            self.blockchain = Blockchain()
+
