@@ -298,3 +298,8 @@ class Wallet:
         print(f"Block #{block.index} mined with hash: {block.hash}")
         return block
 
+def main():
+    print("Crypto Wallet Application")
+    wallet = Wallet()
+    print(f"Wallet created with address: {wallet.address}")
+    print(f"Private key (keep secret!): {wallet.private_key}")
