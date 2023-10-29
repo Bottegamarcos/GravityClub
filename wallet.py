@@ -550,3 +550,6 @@ class Wallet:
             self.load_wallet()
         else:
             self.private_key, self.public_key = self.generate_keys()
+            self.address = self.public_key
+            self.blockchain = Blockchain()
+            self.save_wallet()
