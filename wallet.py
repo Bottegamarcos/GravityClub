@@ -76,3 +76,5 @@ class Wallet:
         """Returns a placeholder balance."""
         # In a real wallet, this would query the blockchain.
         return 100  # Placeholder balance
+
+    def send_transaction(self, recipient_address, amount):
