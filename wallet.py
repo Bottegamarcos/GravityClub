@@ -270,3 +270,5 @@ class Blockchain:
                     return False
         return True
 
+class Wallet:
+    def __init__(self):
