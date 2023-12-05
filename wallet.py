@@ -180,3 +180,5 @@ class Transaction:
         return hashlib.sha256(tx_data.encode()).hexdigest()
 
     def sign_transaction(self, private_key: str):
+        sk = ecdsa.SigningKey.from_string(binascii.unhexlify(private_key), curve=ecdsa.SECP256k1)
+        tx_hash = self.compute_hash()
