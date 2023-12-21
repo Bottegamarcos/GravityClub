@@ -268,3 +268,5 @@ class Blockchain:
             for tx in current.transactions:
                 if not tx.verify_signature(tx.sender):
                     return False
+        return True
+
