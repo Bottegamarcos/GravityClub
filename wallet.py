@@ -252,3 +252,5 @@ class Blockchain:
                 if tx.sender == address:
                     balance -= tx.amount
                 if tx.recipient == address:
+                    balance += tx.amount
+        return balance
