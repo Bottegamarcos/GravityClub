@@ -1087,3 +1087,6 @@ class Blockchain:
         self.chain.append(genesis_block)
         self.save_chain()
 
+    def save_chain(self):
+        with open(self.chain_file, 'w') as f:
+            json.dump([{
