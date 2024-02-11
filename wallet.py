@@ -863,3 +863,8 @@ class Block:
     def mine_block(self, difficulty: int = 4):
         target = '0' * difficulty
         while self.hash[:difficulty] != target:
+            self.nonce += 1
+            self.hash = self.compute_hash()
+
+class Blockchain:
+    def __init__(self, difficulty: int = 4):
