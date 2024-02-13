@@ -788,3 +788,8 @@ class Blockchain:
                     block = Block(
                         block_data['index'],
                         transactions,
+                        block_data['previous_hash'],
+                        block_data['timestamp']
+                    )
+                    block.nonce = block_data['nonce']
+                    block.hash = block_data['hash']
