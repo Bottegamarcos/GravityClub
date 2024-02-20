@@ -230,3 +230,5 @@ class Blockchain:
         self.chain.append(genesis_block)
 
     def get_latest_block(self) -> Block:
+        return self.chain[-1]
+
