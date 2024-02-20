@@ -1012,3 +1012,6 @@ class Transaction:
         self.amount = amount
         self.timestamp = timestamp or time.time()
         self.signature = None
+        self.tx_id = self.compute_hash()
+
+    def to_dict(self) -> Dict:
