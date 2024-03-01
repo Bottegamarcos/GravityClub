@@ -444,3 +444,5 @@ class Blockchain:
                 'transactions': [tx.to_dict() for tx in block.transactions],
                 'previous_hash': block.previous_hash,
                 'timestamp': block.timestamp,
+                'nonce': block.nonce,
+                'hash': block.hash
