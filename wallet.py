@@ -22,3 +22,6 @@ def private_key_to_wif(private_key):
     wif = base58.b58encode(extended_key + checksum).decode()
     return wif
 
+def wif_to_private_key(wif):
+    """Converts a WIF string back to a private key."""
+    decoded_wif = base58.b58decode(wif)
