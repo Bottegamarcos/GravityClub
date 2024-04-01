@@ -847,3 +847,6 @@ class Blockchain:
                         'sender': tx.sender,
                         'recipient': tx.recipient,
                         'amount': tx.amount,
+                        'timestamp': datetime.fromtimestamp(tx.timestamp).strftime('%Y-%m-%d %H:%M:%S'),
+                        'block_index': block.index
+                    })
