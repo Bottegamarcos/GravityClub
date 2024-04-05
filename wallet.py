@@ -1058,3 +1058,8 @@ class Network:
     def add_node(self, wallet: 'Wallet'):
         self.nodes.append(wallet)
 
+    def broadcast_transaction(self, transaction: Transaction):
+        success = True
+        for node in self.nodes:
+            if not node.blockchain.add_transaction(transaction):
+                success = False
