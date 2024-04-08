@@ -104,3 +104,5 @@ def main():
         amount = float(input("Enter amount to send: "))
         wallet.send_transaction(recipient_address, amount)
     except ValueError:
+        print("Invalid amount. Please enter a number.")
+
