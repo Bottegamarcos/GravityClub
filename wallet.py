@@ -886,3 +886,6 @@ class Wallet:
         return private_key, public_key
 
     def save_wallet(self):
+        with open(self.wallet_file, 'wb') as f:
+            pickle.dump({
+                'private_key': self.private_key,
