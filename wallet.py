@@ -2063,3 +2063,8 @@ class Blockchain:
         self.save_chain()
 
     def save_chain(self):
+        with open(self.chain_file, 'w') as f:
+            json.dump([{
+                'index': block.index,
+                'transactions': [tx.to_dict() for tx in block.transactions],
+                'previous_hash': block.previous_hash,
