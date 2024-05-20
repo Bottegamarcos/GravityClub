@@ -380,3 +380,5 @@ class Transaction:
             'recipient': self.recipient,
             'amount': self.amount,
             'timestamp': self.timestamp
+        }, sort_keys=True)
+        return hashlib.sha256(tx_data.encode()).hexdigest()
