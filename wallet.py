@@ -162,3 +162,5 @@ class Transaction:
         self.signature = None
 
     def to_dict(self) -> Dict:
+        return {
+            'sender': self.sender,
