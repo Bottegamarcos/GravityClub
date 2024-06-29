@@ -1073,3 +1073,8 @@ class Block:
 
 class Blockchain:
     def __init__(self, difficulty: int = 4, chain_file: str = "blockchain.json"):
+        self.chain: List[Block] = []
+        self.pending_transactions: List[Transaction] = []
+        self.difficulty = difficulty
+        self.chain_file = chain_file
+        self.load_chain()
