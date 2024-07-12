@@ -1099,3 +1099,6 @@ class Blockchain:
             } for block in self.chain], f, indent=2)
 
     def load_chain(self):
+        if os.path.exists(self.chain_file):
+            with open(self.chain_file, 'r') as f:
+                chain_data = json.load(f)
