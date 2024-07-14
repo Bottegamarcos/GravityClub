@@ -1177,3 +1177,6 @@ class Blockchain:
                     })
         return history
 
+class Network:
+    def __init__(self):
+        self.nodes = []
