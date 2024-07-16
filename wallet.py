@@ -268,3 +268,8 @@ class Blockchain:
             for tx in current.transactions:
                 if not tx.verify_signature(tx.sender):
                     return False
+        return True
+
+class Wallet:
+    def __init__(self):
+        self.private_key, self.public_key = self.generate_keys()
