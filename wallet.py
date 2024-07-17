@@ -967,3 +967,6 @@ def main():
         elif choice == '5':
             history = wallet.get_transaction_history()
             if history:
+                print("\nTransaction History:")
+                for tx in history:
+                    print(f"ID: {tx['tx_id'][:8]}...")
