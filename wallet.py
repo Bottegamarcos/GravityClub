@@ -292,3 +292,6 @@ class Wallet:
         tx = Transaction(self.address, recipient, amount)
         tx.sign_transaction(self.private_key)
         return self.blockchain.add_transaction(tx)
+
+    def mine(self):
+        block = self.blockchain.mine_pending_transactions(self.address)
