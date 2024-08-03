@@ -548,3 +548,5 @@ class Wallet:
         self.network.add_node(self)
         if os.path.exists(wallet_file):
             self.load_wallet()
+        else:
+            self.private_key, self.public_key = self.generate_keys()
