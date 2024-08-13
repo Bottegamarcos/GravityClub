@@ -192,3 +192,5 @@ class Transaction:
         except Exception:
             return False
 
+class Block:
+    def __init__(self, index: int, transactions: List[Transaction], previous_hash: str, timestamp: float = None):
