@@ -190,3 +190,5 @@ class Transaction:
             tx_hash = self.compute_hash()
             return vk.verify(binascii.unhexlify(self.signature), tx_hash.encode())
         except Exception:
+            return False
+
