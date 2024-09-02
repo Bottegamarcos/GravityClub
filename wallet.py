@@ -164,3 +164,5 @@ class Transaction:
     def to_dict(self) -> Dict:
         return {
             'sender': self.sender,
+            'recipient': self.recipient,
+            'amount': self.amount,
