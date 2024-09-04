@@ -60,3 +60,5 @@ def simulate_transaction(sender_private_key, recipient_address, amount):
     # broadcasting it to the network, and waiting for confirmation.
     print(f"Simulating transaction: Sending {amount} to {recipient_address}")
     print("Transaction successful (in simulation only!).")
+    return True
+
