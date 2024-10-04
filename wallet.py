@@ -354,3 +354,5 @@ from typing import List, Dict
 import os
 import pickle
 from datetime import datetime
+
+class Transaction:
