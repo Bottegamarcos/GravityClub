@@ -1843,3 +1843,8 @@ def main():
             print("Invalid choice")
 
 if __name__ == "__main__":
+    main()
+    import ecdsa
+import hashlib
+import binascii
+import json
