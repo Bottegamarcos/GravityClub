@@ -1270,3 +1270,6 @@ def main():
             balance = wallet.get_balance()
             print(f"Balance: {balance} coins")
 
+        elif choice == '2':
+            recipient = input("Enter recipient address: ")
+            try:
