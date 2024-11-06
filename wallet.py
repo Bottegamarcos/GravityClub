@@ -454,3 +454,6 @@ class Blockchain:
                 chain_data = json.load(f)
                 self.chain = []
                 for block_data in chain_data:
+                    transactions = [Transaction(
+                        tx['sender'], tx['recipient'], tx['amount'], tx['timestamp']
+                    ) for tx in block_data['transactions']]
