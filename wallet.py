@@ -624,3 +624,5 @@ def main():
             recipient = input("Enter recipient address: ")
             try:
                 amount = float(input("Enter amount: "))
+                if wallet.send_transaction(recipient, amount):
+                    print("Transaction sent successfully")
