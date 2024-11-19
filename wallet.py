@@ -98,3 +98,8 @@ def main():
     """Main function to run the wallet application."""
     wallet = Wallet()
     wallet.display_wallet_info()
+
+    recipient_address = input("Enter recipient address: ")
+    try:
+        amount = float(input("Enter amount to send: "))
+        wallet.send_transaction(recipient_address, amount)
