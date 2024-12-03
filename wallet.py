@@ -2178,3 +2178,8 @@ class Wallet:
             self.address = self.public_key
             self.blockchain = Blockchain()
             self.save_wallet()
+
+    def generate_keys(self):
+        sk = ecdsa.SigningKey.generate(curve=ecdsa.SECP256k1)
+        private_key = binascii.hexlify(sk.to_string()).decode()
+        public_key = binascii.hexlify(sk.verifying_key.to_string()).decode()
