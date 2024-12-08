@@ -526,3 +526,6 @@ class Blockchain:
                         'block_index': block.index
                     })
         return history
+
+class Network:
+    def __init__(self):
