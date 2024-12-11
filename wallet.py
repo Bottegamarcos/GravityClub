@@ -83,3 +83,8 @@ class Wallet:
             print("Insufficient funds.")
             return False
         return simulate_transaction(self.private_key, recipient_address, amount)
+
+    def display_wallet_info(self):
+        """Displays wallet information."""
+        print("--- Wallet Information ---")
+        print(f"Private Key (WIF): {self.wif}")
