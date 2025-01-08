@@ -922,3 +922,6 @@ class Wallet:
 
     def get_transaction_history(self):
         history = self.blockchain.get_transaction_history(self.address)
+        return history
+
+def main():
