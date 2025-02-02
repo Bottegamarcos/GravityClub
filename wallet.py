@@ -993,3 +993,8 @@ def main():
             print("Invalid choice")
 
 if __name__ == "__main__":
+    main()
+    def get_latest_block(self) -> Block:
+        return self.chain[-1]
+
+    def add_transaction(self, transaction: Transaction):
