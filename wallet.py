@@ -568,3 +568,6 @@ class Wallet:
                 'address': self.address
             }, f)
 
+    def load_wallet(self):
+        with open(self.wallet_file, 'rb') as f:
+            data = pickle.load(f)
