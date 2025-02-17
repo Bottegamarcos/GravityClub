@@ -184,3 +184,5 @@ class Transaction:
         tx_hash = self.compute_hash()
         self.signature = binascii.hexlify(sk.sign(tx_hash.encode())).decode()
 
+    def verify_signature(self, public_key: str) -> bool:
+        try:
