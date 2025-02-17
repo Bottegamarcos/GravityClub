@@ -1216,3 +1216,6 @@ class Wallet:
                 'private_key': self.private_key,
                 'public_key': self.public_key,
                 'address': self.address
+            }, f)
+
+    def load_wallet(self):
